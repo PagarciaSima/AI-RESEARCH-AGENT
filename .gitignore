@@ -1,2 +1,3 @@
 .metadata/
 ai-research-agent/bin/
+ai-research-agent/.env
