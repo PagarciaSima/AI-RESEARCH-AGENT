@@ -1,10 +1,10 @@
-package com.pgs.ai_research_agent;
+package com.pgs.ai.research.agent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AiResearchAgentApplicationTests {
+class AgentApplicationTests {
 
 	@Test
 	void contextLoads() {
