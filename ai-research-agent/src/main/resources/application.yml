@@ -16,3 +16,28 @@ spring:
     properties:
       hibernate:
         format_sql: true
+    
+proxy:
+  host: res.proxy-seller.com
+  port: 10000
+  username: ${PROXY_USERNAME:yourUsername}
+  password: ${PROXY_PASSWORD:yourPassword}
+  user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+  
+# Anthropic config
+anthropic:
+  api-key: ${ANTHROPIC_API_KEY:}
+  model: claude-haiku-4-5-20251001
+  base-url: https://api.anthropic.com/v1
+  version: "2023-06-01"
+
+# Scraping config
+scraping:
+  cron: "0 0 */3 * * *"
+  reddit:
+    subreddits: technology,artificial,MachineLearning,startups,SaaS
+    posts-per-subreddit: 25
+  hackernews:
+    top-stories-count: 30
+  producthunt:
+    posts-count: 20
