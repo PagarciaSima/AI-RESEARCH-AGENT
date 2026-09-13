@@ -46,7 +46,7 @@ public class TrendTopic {
 
     private int mentionCount;
 
-    private double score;
+    private double trendScore;
 
     @Enumerated(EnumType.STRING)
     private Platform primaryPlatform;
